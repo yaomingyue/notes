@@ -14,3 +14,22 @@ firefox ~/akae/job-akae.wiki/yao.html &
 printf("sizeof int is%d\n",sizeof(int)); 查看大小
 ##2数组 
 a 表示a[3]首地址即a[0]的地址a=&a[0];
+##3putchar 与getchar函数
+a=getchar();
+putchar(a);
+b=getchar();
+getchar(b);
+c=getchar();
+putchar(c);
+输出结果和预想的不一样，输入两个后就不行了
+其实输入q后回车，q给了a，回车符给了b
+程序中要了三个字符给了三个后就不等待了
+     char a,b,c;
+     a=getchar();
+     printf("%d\n",a);
+     a=getchar();
+     printf("%d\n",a);
+     a=getchar();
+      printf("%d\n",a);
+      上边输入后就清楚的知道abc的值了
+
