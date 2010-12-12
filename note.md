@@ -33,3 +33,6 @@ putchar(c);
       printf("%d\n",a);
       上边输入后就清楚的知道abc的值了
 
+##dynamic link
+
+
