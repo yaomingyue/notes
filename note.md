@@ -42,7 +42,7 @@ when it's running.
 Static linking is the result of the linker copying all library routines used in the program into the executable image. This may require more disk space and memory than dynamic linking, but is both faster and more portable, since it does not require the presence of the library on the system where it is run. 
 
 Dynamic linking is accomplished by placing the name of a sharable library in the executable image. Actual linking with the library routines does not occur until the image is run, when both the executable and the library are placed in memory. An advantage of dynamic linking is that multiple programs can share a single copy of the library.
-
+for more detail informations <http://apps.hi.baidu.com/share/detail/15246175>
 ##linker and loader
 the process of gcc compiling a c program
 该命令调用了GCC编译器驱动程序，将应用程序从ASCII码源文件翻译成可执行的目标文件。在这一过程中，经过了如下步骤：
