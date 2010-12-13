@@ -33,6 +33,26 @@ putchar(c);
       printf("%d\n",a);
       上边输入后就清楚的知道abc的值了
 
-##dynamic link
+##dynamic linking and static linking
+in C program language ,library includes dynamic library and static library ,
+when compiling,static library will be linked in to object file ,so the excutable
+program can run without the library;while,the dynamic library will be linked
+when the program compileing,as a result program must link the dynamic library
+when it's running.
+Static linking is the result of the linker copying all library routines used in the program into the executable image. This may require more disk space and memory than dynamic linking, but is both faster and more portable, since it does not require the presence of the library on the system where it is run. 
 
+Dynamic linking is accomplished by placing the name of a sharable library in the executable image. Actual linking with the library routines does not occur until the image is run, when both the executable and the library are placed in memory. An advantage of dynamic linking is that multiple programs can share a single copy of the library.
+for more detail informations <http://apps.hi.baidu.com/share/detail/15246175>
+##linker and loader
+the process of gcc compiling a c program
+该命令调用了GCC编译器驱动程序，将应用程序从ASCII码源文件翻译成可执行的目标文件。在这一过程中，经过了如下步骤：
+1.  调用C预处理器把main.c翻译成中间文件main.i；
+    cpp [other arguments] main.c /tmp/main.i
+    2.  调用C编译器把main.i翻译成汇编语言文件main.s；
+        cc /tmp/main.i main.c –O2 [other arguments] –o /tmp/main.s
+        3.  调用汇编器把main.s翻译成可重定位目标文件main.o；
+            as [other arguments] –o /tmp/main.o /tmp/main.s
+            4.  对swap.c执行相同的步骤生成swap.o；
+            5.  调用链接器，将main.o和swap.o以及必要的系统目标文件链接组合，生成一个可执行目标文件p。
+                ld –o p [system object files and args] /tmp/main.o /tmp/swap.o
 
