@@ -22,8 +22,6 @@ firefox ~/akae/job-akae.wiki/yao.html &
     #{
     #echo hello
     #}
-
-
 #!/bin/bash
 workdir=~/kka/
 cd $workdir
