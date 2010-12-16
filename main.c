@@ -1,32 +1,19 @@
 #include <stdio.h>
+void set_variable(int *a);
 int main(int argc, const char *argv[])
 {
-   // int a,b;
-    //puts("please input a number with 16 band");
-    //scanf("%x",&a);
-    //puts("another 16 band number");
-    //scanf("%x",&b);
-    //printf("%x",a+b);
-   char aa[100];
-   char bb[10];
-   int i=0,j=0,m=0;
-   gets(aa);
-   while(aa[i]!=' ')
-   {
-        bb[i]=aa[i];
-        i++;
-   }
-    while(aa[j+i+1]!='\0')
-    {
-        aa[j]=aa[j+i+1];
-        j++;
-    }
-    aa[j]=' ';
-    for (m = 0; m < i; m++) 
-    {
-        aa[m+j+1]=bb[m];
-    }
-    printf("%s",aa);
-    putchar('\n');
-    return 0; 
+    int i;
+    i=1;
+    set_variable(&i);
+    printf("%d\n",i);
+    return 0;
+}
+void set_variable(int *a)
+{
+    *a=0;
+    
+	sfsff
+    yaomgin
+                                              
+    
 }

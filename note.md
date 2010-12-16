@@ -5,6 +5,26 @@ my mark.sh
 #!/bin/bash
 markdown ~/akae/job-akae.wiki/note-qhd.md >~/akae/job-akae.wiki/yao.html
 firefox ~/akae/job-akae.wiki/yao.html &
+##bash script
+
+#!/bin/bash
+#workdir=~/kka/
+#cd $workdir
+#for i in a b c d  
+#do 
+    #mv $i $i.c
+    #done
+    file="aa.c"
+    f=`echo $file|awk -F'.' '{print $2}'`
+    echo $f
+    #i=hello
+    #if [$i = hello];then
+    #{
+    #echo hello
+    #}
+
+
+
 #vim using
 #c 语言
 一般来说main函数成功返回时用return 0； 
