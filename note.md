@@ -24,6 +24,20 @@ firefox ~/akae/job-akae.wiki/yao.html &
     #}
 
 
+#!/bin/bash
+workdir=~/kka/
+cd $workdir
+for i in `ls`   
+do 
+f=`echo $i|awk -F'.' '{print $1 }'`
+    mv $i $f
+    done
+    #i=hello
+    #if [$i = hello];then
+    #{
+    #echo hello
+    #}
+    ~ 
 
 #vim using
 #c 语言
