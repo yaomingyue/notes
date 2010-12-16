@@ -7,6 +7,8 @@ markdown ~/akae/job-akae.wiki/note-qhd.md >~/akae/job-akae.wiki/yao.html
 firefox ~/akae/job-akae.wiki/yao.html &
 ##bash script
 
+if []
+
 #!/bin/bash
 #workdir=~/kka/
 #cd $workdir
