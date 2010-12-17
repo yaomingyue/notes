@@ -1,6 +1,48 @@
-
+IS
 #linux note
-编写shall脚本简化操作
+## ubunto disk mounting
+
+###manual mount
+
+sudo mount -t ntfs /dev/sda3 /mnt/e -o iocharset=utf8 //mount the sd3 to e
+(actually it's windows e disk)
+
+udo umount /dev/sda3  //unmount the disk sd3
+
+###automatic mount
+
+/dev/sda3 /mnt/e ntfs utf8,umask=022 0 0     take this sentence to /etc/fstab 
+
+##search file 
+
+find filename
+
+which filename
+
+find .|grep filename
+
+actually grep is a command for string
+
+
+find -name "filename or * "
+
+
+grep hello note.md      
+
+search string or words in a file  ,note.md is filename
+
+bash script for xxx(a filename contain bash script)
+find a string and output the filename and route that contain it 
+find . -exec grep "$1" '{}' \; -print0
+
+./xxx is | vim -  extribut the bash script like this ,output information in a
+vim
+
+www.baidu.com ,+w open the url in firefox
+~/study/notes/note.md ,+r enter the file 
+
+compile the bash script can simplify our operation
+
 my mark.sh
 #!/bin/bash
 markdown ~/akae/job-akae.wiki/note-qhd.md >~/akae/job-akae.wiki/yao.html
